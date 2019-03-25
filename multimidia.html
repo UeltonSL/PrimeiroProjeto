@@ -1,14 +1,34 @@
-Google Glass
-A revolução do Google está chegando
-
-[AQUI ENTRA UMA FOTO]
-
-Menu Principal
-- Home
-- Especificações
-- Fotos
-- Multimídia
-- Fale conosco
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<!-- Configurações de comportamento da pagina-->
+	<meta charset="utf-8"/>
+	<meta name="author" content="Uelton lima">
+	<link rel="stylesheet" href="css/estilo.css">
+	<title>Google Glass</title>
+	<script src="javascript/funcoes.js"></script>
+</head>
+<body>
+	<div id="interface">
+		<header id="cabecalho">
+			<hgroup>
+				<h1>Google Glass</h1>
+				<h3>A revolução do Google está chegando</h3>
+			</hgroup>
+			<figure>
+				<img id="icone" src="imagens/glass-oculos-preto-peq.png" alt="glass-oculos-preto-peq"/>
+			</figure>
+			<nav id="menu">
+				<h3>Menu Principal</h3>
+				<ul>
+					<li onmouseover="mudafoto('imagens/home.png')" onmouseout="mudafoto('imagens/glass-oculos-preto-peq.png')"><a href="index.html">Home</a></li>
+					<li onmouseover="mudafoto('imagens/especificacoes.png')" onmouseout="mudafoto('imagens/glass-oculos-preto-peq.png')"><a href="specs.html">Especificações</a></li>
+					<li onmouseover="mudafoto('imagens/fotos.png')" onmouseout="mudafoto('imagens/glass-oculos-preto-peq.png')"><a href="fotos.html">Fotos</a></li>
+					<li onmouseover="mudafoto('imagens/multimidia.png')" onmouseout="mudafoto('imagens/glass-oculos-preto-peq.png')"><a href="multimidia.html">Multimídia</a></li>
+					<li onmouseover="mudafoto('imagens/contato.png')" onmouseout="mudafoto('imagens/glass-oculos-preto-peq.png')"><a href="fale-conosco.html">Fale conosco</a></li>
+				</ul>
+			</nav>
+		</header>
 
 Glass > Multimídia
 Sons e Vídeos
@@ -21,5 +41,12 @@ Atualizado em 01/Maio/2013
 [AQUI ENTRA UM VÍDEO]
 [AQUI ENTRA UM ÁUDIO]
 
-Copyright 2013 - by Gustavo Guanabara
-Facebook | Twitter
+<footer id="rodape">
+
+			<p>Copyright 2013 - by Uelton Lima <br/>
+				<a href="https://facebook.com/uelton.17" target="_blank">Facebook</a> |
+				<a href="https://twitter.com/UeltonSL" target="_blank"> Twitter</a></p>
+			</footer>
+		</div>
+	</body>
+	</html>

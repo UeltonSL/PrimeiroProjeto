@@ -8,10 +8,11 @@
 body {
 	background-color:#dddddd;
 	color:rgba(0,0,0,0.9);
+	font-family: sans-serif;
 }
 
 div#interface {
-	width: 900px;
+	width: 950px;
 	background: white;
 	margin: -20px auto 0px auto;
 	box-shadow: 0px 0px 10px rgba(0,0,0,.5);
@@ -27,7 +28,7 @@ header#cabecalho {
 }
 
 header#cabecalho h1 {
-	font-family: 'Font-Logo';
+	font-family: 'Font-Logo', sans-serif;
 	font-size: 30pt;
 	color: #606060;
 	text-shadow: 1px 1px 1px rgba(0,0,0,.6)
@@ -35,7 +36,7 @@ header#cabecalho h1 {
 	margin-bottom: 0px;
 }
 
-header#cabecalho h2 {
+header#cabecalho h3 {
 	font-family: 'Charm', cursive;
 	font-size: 15pt;
 	color: #888888;
@@ -49,9 +50,46 @@ header#cabecalho img#icone {
 	top: 75px;
 }
 
+article#noticiaPrincipal h3 {
+	font-size: 15pt;
+	color: #606060;
+	padding: 5px 0px 5px 10px;
+	margin: 10px 0px 10px 0px;
+}
+
+header#cabecalhoArtigo h2 {
+	font-family: 'Font-Logo', sans-serif;
+	font-size: 20pt;
+	color: #606060;
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+header#cabecalhoArtigo h3 {
+	font-size: 15pt;
+	color: #cecece;
+	background-color: #ffffff;
+	margin: 0px;
+}
+header#cabecalhoArtigo h4 {
+	font-size: 12pt;
+	color: #606060;
+}
+.direita {
+	text-align: right;
+}
+
 p {
 	text-align:justify;
 	text-indent:50px;
+}
+
+a {
+	color: #000000;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
 }
 
 /*Formatação de fotos com legendas*/
@@ -112,7 +150,7 @@ nav#menu li:hover {
 	background-color: #606060;
 }
 
-nav#menu h2 {
+nav#menu h3 {
 	display: none;
 }
 
@@ -128,7 +166,7 @@ nav#menu a:hover {
 
 section#corpo {
 	display: block;
-	width: 520px;
+	width: 550px;
 	float: left;
 	border-right: 1px solid #606060;
 	padding-right: 10px;
@@ -173,9 +211,28 @@ table#tabelaspec td.classeDireita {
 }
 
 aside#lateral {
-	display: block;
-	width: 350px;
+	background-color: #dddddd;
+	width: 340px;
 	float: right;
+	box-shadow: 1px 1px 4px rgba(0,0,0,.6);
+	margin: 15px 10px 10px 10px;
+	padding: 10px;
+}
+
+aside#lateral h2 {
+	font-family: 'Font-Logo', sans-serif;
+	font-size: 20pt;
+	color: #606060;
+}
+
+aside#lateral h3 {
+	font-family: sans-serif;
+	background-color: #606060;
+	font-size: 15pt;
+	font-weight: bolder;
+	color: #ffffff;
+	padding: 5px;
+
 }
 
 footer#rodape {
