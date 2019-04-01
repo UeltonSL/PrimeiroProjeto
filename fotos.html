@@ -1,55 +1,66 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-	<!-- Configurações de comportamento da pagina-->
-	<meta charset="utf-8"/>
-	<meta name="author" content="Uelton lima">
-	<link rel="stylesheet" href="css/estilo.css">
-	<title>Google Glass</title>
-	<script src="javascript/funcoes.js"></script>
-</head>
-<body>
-	<div id="interface">
-		<header id="cabecalho">
-			<hgroup>
-				<h1>Google Glass</h1>
-				<h3>A revolução do Google está chegando</h3>
-			</hgroup>
-			<figure>
-				<img id="icone" src="imagens/fotos.png" alt="fotos"/>
-			</figure>
-			<nav id="menu">
-				<h3>Menu Principal</h3>
-				<ul>
-					<li onmouseover="mudafoto('imagens/home.png')" onmouseout="mudafoto('imagens/fotos.png')"><a href="index.html">Home</a></li>
-					<li onmouseover="mudafoto('imagens/especificacoes.png')" onmouseout="mudafoto('imagens/fotos.png')"><a href="specs.html">Especificações</a></li>
-					<li onmouseover="mudafoto('imagens/fotos.png')" onmouseout="mudafoto('imagens/fotos.png')"><a href="fotos.html">Fotos</a></li>
-					<li onmouseover="mudafoto('imagens/multimidia.png')" onmouseout="mudafoto('imagens/fotos.png')"><a href="multimidia.html">Multimídia</a></li>
-					<li onmouseover="mudafoto('imagens/contato.png')" onmouseout="mudafoto('imagens/fotos.png')"><a href="fale-conosco.html">Fale conosco</a></li>
-				</ul>
-			</nav>
-		</header>
-
-Glass > Fotos
-Galeria de Imagens do Google Glass
-por Gustavo Guanabara
-Atualizado em 01/Maio/2013
-
-Veja na nossa galeria de fotos várias belas imagens que mostram algumas das principais características do Google Glass, como recursos e propriedades que estão impressionando o mundo inteiro. Basta passar o mouse sobre uma das fotos para ver uma versão ampliada e com uma breve descrição.
-
-- Agenda e lembretes
-- Sergey Brin usando o Glass
-- Leve e compacto
-- Sensação de uma tela de 50"
-- Vários tipos de lente
-- Informações importantes
-
-<footer id="rodape">
-
-			<p>Copyright 2013 - by Uelton Lima <br/>
+	<head>
+		<!-- Configurações de comportamento da pagina-->
+		<meta charset="utf-8"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="keywords" content="Google, Glass, Especificações, GPS, Óculos, Tecnologia" />
+		<meta name="description" content="a revolução do Google Glass para otimizar nossa vida." />
+		<meta name="author" content="Uelton lima" />
+		<link rel="stylesheet" href="css/estilo.css" />
+		<link rel="stylesheet" href="css/fotos.css" />
+		<script src="javascript/funcoes.js"></script>
+		<title>Google Glass</title>
+	</head>
+	<body>
+		<div id="interface">
+			<header id="cabecalho">
+				<hgroup>
+					<h1>Google Glass</h1>
+					<h3>A revolução do Google está chegando</h3>
+				</hgroup>
+				<figure>
+					<img id="icone" src="imagens/fotos.png" alt="fotos"/>
+				</figure>
+				<nav id="menu">
+					<h3>Menu Principal</h3>
+					<ul>
+						<li onmouseover="mudafoto('imagens/home.png')" onmouseout="mudafoto('imagens/fotos.png')"><a href="index.html">Home</a></li>
+						<li onmouseover="mudafoto('imagens/especificacoes.png')" onmouseout="mudafoto('imagens/fotos.png')"><a href="specs.html">Especificações</a></li>
+						<li onmouseover="mudafoto('imagens/fotos.png')" onmouseout="mudafoto('imagens/fotos.png')"><a href="fotos.html">Fotos</a></li>
+						<li onmouseover="mudafoto('imagens/multimidia.png')" onmouseout="mudafoto('imagens/fotos.png')"><a href="multimidia.html">Multimídia</a></li>
+						<li onmouseover="mudafoto('imagens/contato.png')" onmouseout="mudafoto('imagens/fotos.png')"><a href="fale-conosco.html">Fale conosco</a></li>
+					</ul>
+				</nav>
+			</header>
+			<section id="corpoCompleto">
+				<article id="noticiaPrincipal">
+					<header id="cabecalhoArtigo">
+						<hgroup>
+							<h4>Glass > Fotos</h4>
+							<h2>Galeria de Imagens do Google Glass</h2>
+							<h3>por Uelton Lima</h3>
+							<h4 class="direita">Atualizado em 01/Maio/2013</h4>
+						</hgroup>
+					</header>
+					<p>Veja na nossa galeria de fotos várias belas imagens que mostram algumas das principais características do Google Glass, como recursos e propriedades que estão impressionando o mundo inteiro. Basta passar o mouse sobre uma das fotos para ver uma versão ampliada e com uma breve descrição.</p>
+					<ul id="albumFotos">
+						<li id="foto01"><span>Agenda e lembretes</span></li>
+						<li id="foto02"><span>Sergey Brin usando o Glass</span></li>
+						<li id="foto03"><span>Leve e compacto</span></li>
+						<li id="foto04"><span>Sensação de uma tela de 50"</span></li>
+						<li id="foto05"><span>Vários tipos de lente</span></li>
+						<li id="foto06"><span>Informações importantes</span></li>
+					</ul>
+					
+				</article>
+			</section>
+			<footer id="rodape">
+				<p>Copyright 2013 - by Uelton Lima <br/>
 				<a href="https://facebook.com/uelton.17" target="_blank">Facebook</a> |
 				<a href="https://twitter.com/UeltonSL" target="_blank"> Twitter</a></p>
 			</footer>
 		</div>
 	</body>
-	</html>
+</html>
