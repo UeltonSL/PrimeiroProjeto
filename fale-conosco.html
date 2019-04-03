@@ -1,74 +1,145 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <!-- Configurações de comportamento da pagina-->
-    <meta charset="utf-8"/>
-    <meta name="author" content="Uelton lima">
-    <link rel="stylesheet" href="css/estilo.css">
-    <title>Google Glass</title>
-    <script src="javascript/funcoes.js"></script>
-</head>
-<body>
-    <div id="interface">
-        <header id="cabecalho">
-            <hgroup>
-                <h1>Google Glass</h1>
-                <h3>A revolução do Google está chegando</h3>
-            </hgroup>
-            <figure>
-                <img id="icone" src="imagens/contato.png" alt="contato"/>
-            </figure>
-            <nav id="menu">
-                <h3>Menu Principal</h3>
-                <ul>
-                    <li onmouseover="mudafoto('imagens/home.png')" onmouseout="mudafoto('imagens/contato.png')"><a href="index.html">Home</a></li>
-                    <li onmouseover="mudafoto('imagens/especificacoes.png')" onmouseout="mudafoto('imagens/contato.png')"><a href="specs.html">Especificações</a></li>
-                    <li onmouseover="mudafoto('imagens/fotos.png')" onmouseout="mudafoto('imagens/contato.png')"><a href="fotos.html">Fotos</a></li>
-                    <li onmouseover="mudafoto('imagens/multimidia.png')" onmouseout="mudafoto('imagens/contato.png')"><a href="multimidia.html">Multimídia</a></li>
-                    <li onmouseover="mudafoto('imagens/contato.png')" onmouseout="mudafoto('imagens/contato.png')"><a href="fale-conosco.html">Fale conosco</a></li>
-                </ul>
-            </nav>
-        </header>
+    <head>
+        <!-- Configurações de comportamento da pagina-->
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="keywords" content="Google, Glass, Especificações, GPS, Óculos, Tecnologia" />
+        <meta name="description" content="a revolução do Google Glass para otimizar nossa vida." />
+        <meta name="author" content="Uelton lima" />
+        <link rel="stylesheet" href="css/estilo.css" />
+        <link rel="stylesheet" href="css/form.css" />
+        <title>Google Glass</title>
+        <script src="javascript/funcoes.js"></script>
+        <script>
+          function calcTotal() {
+           // body...
+           var qtd = parseInt(document.getElementById('idQuantidade').value);
+           total = qtd * 1500;
+           document.getElementById('idTotal').value = total;
+          }
+        </script>
+    </head>
+    <body>
+        <div id="interface">
+            <header id="cabecalho">
+                <hgroup>
+                    <h1>Google Glass</h1>
+                    <h3>A revolução do Google está chegando</h3>
+                </hgroup>
+                <figure>
+                    <img id="icone" src="imagens/contato.png" alt="contato"/>
+                </figure>
+                <nav id="menu">
+                    <h3>Menu Principal</h3>
+                    <ul>
+                        <li onmouseover="mudafoto('imagens/home.png')" onmouseout="mudafoto('imagens/contato.png')"><a href="index.html">Home</a></li>
+                        <li onmouseover="mudafoto('imagens/especificacoes.png')" onmouseout="mudafoto('imagens/contato.png')"><a href="specs.html">Especificações</a></li>
+                        <li onmouseover="mudafoto('imagens/fotos.png')" onmouseout="mudafoto('imagens/contato.png')"><a href="fotos.html">Fotos</a></li>
+                        <li onmouseover="mudafoto('imagens/multimidia.png')" onmouseout="mudafoto('imagens/contato.png')"><a href="multimidia.html">Multimídia</a></li>
+                        <li onmouseover="mudafoto('imagens/contato.png')" onmouseout="mudafoto('imagens/contato.png')"><a href="fale-conosco.html">Fale conosco</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <section id="corpoCompleto">
+                <article id="noticiaPrincipal">
+                    <header id="cabecalhoArtigo">
+                        <hgroup>
+                            <h4>Fale Conosco > Contato</h4>
+                            <h2>Formulário de Contato</h2>
+                            <h3>por Uelton Lima</h3>
+                            <h4 class="direita">Atualizado em 01/Maio/2013</h4>
+                        </hgroup>
+                    </header>
+                    <form method="post" id="idContato" action="mailto:ueltonlima.17@gmail.com" oninput="calcTotal();">
+                        <fieldset id="usuario"><legend>Identificação do Usuário</legend>
+                            <p><label for="idNome">
+                                    Nome: <input type="text" name="nome" id="idNome" size="20" maxlength="30" placeholder="Nome completo" />
+                                </label></p>
+                            <p><label for="idSenha">
+                                    Senha: <input type="password" name="senha" id="idSenha" size="8" maxlength="8" placeholder="8 dígitos" />
+                                </label></p>
+                            <p><label for="idEmail">
+                                    E-mail: <input type="email" name="email" id="idEmail" size="15" maxlength="20" placeholder="Seu e-mail aqui!" />
+                                </label></p>
+                            <fieldset id="sexo"><legend>Sexo</legend>
+                                <label for="idMasculino">
+                                    <input type="radio" name="sexo" id="idMasculino" checked /> Masculino <br/>
+                                </label>
+                                <label for="idFeminino">
+                                    <input type="radio" name="sexo" id="idFeminino" /> Feminino
+                                </label>
+                            </fieldset>
+                            <p><label for="idNascimento">
+                                    Data de Nascimento: <input type="date" name="dataNascimento" id="idNascimento" />
+                                </label></p>
+                        </fieldset>
 
-Fale Conosco > Contato
-Formulário de Contato
-por Gustavo Guanabara
-Atualizado em 01/Maio/2013
+                        <fieldset id="endereco"><legend>Endereço do Usuário</legend>
+                            <p><label for="idLogradouro">
+                                Logradouro <input type="text" name="logradouro" id="idLogradouro" size="40" maxlength="80" placeholder="Rua, Av., Bairro, Trav.." />
+                            </label></p>
+                            <p><label for="idNumero">
+                                Número <input type="number" name="numero" id="idNumero" min="0" max="9999" />
+                            </label></p>
+                            <p><label for="idEstado">
+                                Estado <select name="estado" id="idEstado">
+                                    <option value="df" selected>Distrito Federal</option>
+                                    <option value="ba">Bahia</option>
+                                    <option value="rj">Rio de janeiro</option>
+                                    <option value="sp">São Paulo</option>
+                                    <option value="ce">Ceará</option>
+                                    <option value="mg">Minas Gerais</option>
+                                </select>
+                            </label></p>
+                            <p><label for="idCidade">
+                                Cidade
+                                <input type="text" name="cidade" id="idCidade" size="20" maxlength="30" placeholder="sua cidade" list="idCidades" />
+                                <datalist id="idCidades">
+                                    <option value="">Taguatinga</option>
+                                    <option value="">Ceilândia</option>
+                                    <option value="">Aguas claras</option>
+                                    <option value="">Brasilia</option>
+                                    <option value="">Gama</option>
+                                    <option value="">Recanto das Emas</option>
+                                </datalist>
+                            </label></p>
+                        </fieldset>
 
-Identificação do Usuário
-    Nome:
-    Senha:
-    E-mail:
-    Sexo:
-        - Masculino
-        - Feminino
-    Data de Nascimento:
+                        <fieldset id="mensagem"><legend>Mensagem do Usuário</legend>
+                            <p><label for="idUrgencia">
+                                Grau de Urgência: &nbsp; Min<input type="range" name="urgencia" id="idUrgencia" min="0" max="10" step="2" />Max
+                            </label></p>
+                            <p><label for="idMensagem">
+                                Mensagem: &nbsp; <textarea name="mensagem" id="idMensagem" cols="40" rows="5" placeholder="Digite sua mensagem aqui!"></textarea>
+                            </label></p>
+                        </fieldset>
 
-Endereço do Usuário
-    Logradouro:
-    Número:
-    Estado:
-    Cidade:
+                        <fieldset id="pedido"><legend>Quero um Google Glass</legend>
+                            <p><label for="idPedido"><input type="checkbox" name="adquirir" id="idPedido" checked />
+                                Gostaria de adquirir um Google Glass quando disponível
+                            </label></p>
+                            <p><label for="idCor">
+                                Cor: <input type="color" name="Cor" id="idCor" value="#0000ff" />
+                            </label></p>
+                            <p><label for="idQuantidade">
+                                Quantidade: <input type="number" name="quantidade" id="idQuantidade" min="0" max="10" value="0" />
+                            </label></p>
+                            <p><label for="idTotal">
+                                Preço Total: R$ <input type="text" name="total" id="idTotal" size="10" placeholder="Total á pagar" readonly />
+                            </label></p>
+                        </fieldset>
 
-Mensagem do Usuário
-    Grau de Urgência:
-    Mensagem:
-
-Quero um Google Glass
-    Gostaria de adquirir um Google Glass quando disponível
-    Cor:
-    Quantidade:
-    Preço Total: R$
-
-
-[BOTÃO ENVIAR]
-
-<footer id="rodape">
-
-            <p>Copyright 2013 - by Uelton Lima <br/>
+                        <input type="image" name="btn-formEnviar" src="imagens/botao-enviar.png" value="" />
+                    </form>
+                </article>
+            </section>
+            <footer id="rodape">
+                <p>Copyright 2013 - by Uelton Lima <br/>
                 <a href="https://facebook.com/uelton.17" target="_blank">Facebook</a> |
                 <a href="https://twitter.com/UeltonSL" target="_blank"> Twitter</a></p>
             </footer>
         </div>
     </body>
-    </html>
+</html>
